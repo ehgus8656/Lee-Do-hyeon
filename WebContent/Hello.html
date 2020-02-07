@@ -4,6 +4,7 @@
 <meta charset="EUC-KR">
 <title>Hello Ajax</title>
 <script type="text/javascript">
+	function getXHR() {
 	var req;
 	try{
 		req = new XMLHttpRequest();
@@ -15,6 +16,7 @@
 		}
 	}
 	return req;
+	}
 	function asyncSend() {
 		var req = getXHR();
 		//비동기 통신 시 처리할 콜백 함수
